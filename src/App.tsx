@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HeroSection from "./components/HeroSection";
+import AboutUsSection from "./components/AboutUsSection";
+import CoursesSection from "./components/CoursesSection";
+import PricesSection from "./components/PricesSection";
+import GallerySection from "./components/GallerySection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+// import other sections as you create them
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => (
+  <div className="bg-gray-50 min-h-screen">
+    <HeroSection />
+    <AboutUsSection />
+    <CoursesSection />
+    <PricesSection />
+    <GallerySection />
+    <ContactSection />
+    <Footer />
+    {/* Add CoursesSection, GallerySection, ContactSection, Footer here */}
+  </div>
+);
 
 export default App;
